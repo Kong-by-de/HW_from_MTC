@@ -1,0 +1,144 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual Machine Crash Logs
+hs_err_pid*
+
+# JVM crash logs
+replay_pid*
+
+# IDE
+# Eclipse
+.eclipse
+*/.metadata
+tmp/
+*/tmp*
+*.tmp
+*.bak
+*.swp
+*~
+.history
+.local
+.settings/
+.project
+.classpath
+.metadata/
+bin/
+target/
+build/
+*.launch
+.externalToolBuilders/
+.apt_generated
+.factorypath
+.devmode
+.sts4-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+cache/
+logs/
+
+# Gradle
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.cache-main/
+.cache-1/
+.cache-2/
+.cache-3/
+.cache-4/
+.cache-5/
+.cache-6/
+.cache-7/
+.cache-8/
+.cache-9/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot
+spring-boot-starter-parent/
+*.version
+
+# Misc
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehcache-core-*.jar
+*.lock
+*lock*
+*.lock.*
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Unit test
+**/test-output/
+
+# Coverage reports
+**/coverage/
+**/.coverage
+**/cobertura.xml
+**/jacoco.exec
+**/jacoco/
+**/reports/
+
+# Docker
+**/docker-compose*.yml
+**/Dockerfile
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
