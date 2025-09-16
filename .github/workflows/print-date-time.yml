@@ -1,17 +1,24 @@
-name: Print Date and Time
+name: Java Maven
 
 on:
   push:
-    branches: '**'  # Срабатывает на пуш в любую ветку
+    branches: [ "**" ]
   pull_request:
-    branches: '**'  # Срабатывает на PR в любую ветку
+    branches: [ "main" ]
 
 jobs:
-  print-time:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Get current time
-        run: |
-          echo "Current date and time: $(date --utc)"
-          echo "Local date and time: $(date)"
-          echo "Timestamp: $(date +%s)"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
